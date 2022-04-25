@@ -1,21 +1,29 @@
 h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: fuchsia;
-    font-style: italic;
+    
+    
 }
 
 .center-wrapper{
     justify-content: center;
-    margin: 20rem;
+    text-align: center;
+    margin: 4rem 20%;
+    width: auto;
 }
-.danger{
-    margin-left: 10rem;
-}
+
 .danger:hover{
     cursor: pointer;
 }
 .action_button{
-    color: aqua;
-    border: 5px;
-    border-style:groove;
+  
+  
+}
+.container{
+    
+}
+.badge{
+    margin-left: auto;
+}
+.action_button{
+    margin: 1rem 1rem;
 }
