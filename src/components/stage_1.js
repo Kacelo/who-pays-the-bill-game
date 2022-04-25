@@ -35,7 +35,8 @@ const Stage1 = () => {
   console.log(context);
   return (
     <>
-      <Form onSubmit={handleSubmit} className="nt-4">
+    <div className="container">
+    <Form onSubmit={handleSubmit} className="nt-4">
         <Form.Group>
           <Form.Control type="text"
            placeholder="Add Player name" 
@@ -67,22 +68,31 @@ const Stage1 = () => {
                   align-items-center
                    list-group-item-action'>
                     {item}
+                    <div className="badge">
                     <Badge
                     className="danger" 
                     onClick={()=>context.removePlayer(id)}>x</Badge>
+                    </div>
+                    
                   </li>
+                  
                 ))
+                
                 }
+                
             </ul>
-            <div 
+            <hr/>
+            <Button
             className="action_button btn" role={'button'} onClick={()=> context.next() }>
               NEXT
-            </div>
+            </Button>
           </div>
           </>
           : null
         }
       </Form>
+    </div>
+      
     </>
   );
 };

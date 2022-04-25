@@ -1,5 +1,6 @@
 import React,{useContext} from 'react';
 import { MyContext } from '../context';
+import { Button, Form, Alert, Badge } from "react-bootstrap";
 const Stage2 =()=>{
 
     const context =useContext(MyContext)
@@ -11,12 +12,12 @@ const Stage2 =()=>{
             </h3>
             <div>{context.state.result}</div>
         </div>
-        <div className='action_button' role={'button'} onClick={()=>context.resetGame()}>
+        <Button className='action_button' onClick={()=>context.resetGame()}>
             Start over
-        </div>
-        <div className='action_button btn_2' role={'button'} onClick={()=>context.getNewLoser()}>
+        </Button>
+        <Button className='action_button btn_2' onClick={()=>context.getNewLoser()}>
             Get new loser
-            </div>
+            </Button>
         </>
         
     )
